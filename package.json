@@ -5,13 +5,16 @@
     "@rails/actioncable": "^6.0.0",
     "@rails/ujs": "^6.0.0",
     "@rails/webpacker": "4.2.2",
+    "axios": "^0.19.2",
     "bootstrap-vue": "^2.16.0",
     "turbolinks": "^5.2.0",
     "vue": "^2.6.11",
     "vue-loader": "^15.9.3",
     "vue-popperjs": "^2.3.0",
     "vue-router": "^3.3.4",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.11",
+    "vuejs-paginate": "^2.1.0",
+    "vuetify": "^2.3.7"
   },
   "version": "0.1.0",
   "devDependencies": {

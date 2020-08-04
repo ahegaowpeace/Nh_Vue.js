@@ -7,6 +7,8 @@
 <script>
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import Vuetify from 'vuetify'
+import 'vuetify/dist/vuetify.min.css'
 
 import NavBar from 'NavBar.vue'
 import TopPage from 'TopPage.vue'

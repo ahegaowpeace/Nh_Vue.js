@@ -14,7 +14,6 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 import Popper from 'vue-popperjs'
 import 'vue-popperjs/dist/vue-popper.css'
-
 Vue.use(BootstrapVue)
 
 document.addEventListener('DOMContentLoaded', () => {
