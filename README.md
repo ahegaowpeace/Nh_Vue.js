@@ -1,24 +1,8 @@
-# README
+## 仕様
+- RoR
+- Vue.js
+- Dcoker
+	- AWSのCentOS上で作成したDocker ImageをオンプレのCentOS上に展開すると、Railsのデフォルトページは表示されるけれどルーティングは失敗した.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Memo
+- Bootstrapを導入する際にpopperjsかjqueryがVue.jsと共存出来ない(?)ので、落ちてるコンポーネントを使うことにした.

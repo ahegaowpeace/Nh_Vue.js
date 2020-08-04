@@ -1,5 +1,5 @@
 <template>
-	<div class="container">
+	<div class="root-container">
 		<navbar></navbar>
 		<h1>TopPage</h1>
 	</div>
