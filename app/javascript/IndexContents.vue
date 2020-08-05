@@ -13,9 +13,8 @@
 			</tbody>
 		</table>
 		{{count[0].pagenum}}
-		<getpagenum
-  		@pare-pagenum="getPageNum"
-  	>
+		{{count[0].totalpagenum}}
+		<getpagenum @pare-pagenum="getPageNum">
 		</getpagenum>
 	</div>
 </template>
@@ -26,6 +25,7 @@ import axios from 'axios'
 Vue.$http = axios;
 
 import getpagenum from 'PageNation.vue'
+
 export default {
 	components: {
 		getpagenum

@@ -20,6 +20,8 @@
 </template>
 
 <script>
+import axios from 'axios'
+
 import Vue from 'vue';
 import Paginate from 'vuejs-paginate';
 Vue.component('paginate', Paginate);
@@ -28,9 +30,21 @@ export default {
 	data() {
     return {
       page: 1,
-			pagecount: 25
+			pagecount: 25,
     }
   },
+	created: function () {
+		this.pagecount = Number(this.totalpagenum);
+	},
+	mounted () {
+		axios
+			.get('/api/v1/books.json', {
+				params: {
+					page: 1
+				}
+			})
+			.then(response => (this.pagecount = response.data.pagesnum))
+	},
 	methods: {
 		clickCallback (pageNum) {
 			this.$emit('pare-pagenum', pageNum);
