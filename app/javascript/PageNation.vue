@@ -1,7 +1,7 @@
 <template>
 	<paginate
     v-model="page"
-    :page-count="20"
+    :page-count="pagecount"
     :page-range="10"
     :margin-pages="2"
     :click-handler="clickCallback"
@@ -27,8 +27,14 @@ Vue.component('paginate', Paginate);
 export default {
 	data() {
     return {
-      page: 10
+      page: 1,
+			pagecount: 25
     }
-  }
+  },
+	methods: {
+		clickCallback (pageNum) {
+			this.$emit('pare-pagenum', pageNum);
+		}
+	}
 }
 </script>

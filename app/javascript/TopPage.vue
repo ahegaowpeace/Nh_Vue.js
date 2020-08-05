@@ -1,8 +1,8 @@
 <template>
 	<div class="root-container">
 		<navbar></navbar>
-		<h1>TopPage:</h1>
-		<pagenation></pagenation>
+		<h1>TopPage</h1>
+		<indexcontents></indexcontents>
 	</div>
 </template>
 
@@ -11,12 +11,12 @@ import Vue from 'vue'
 import axios from 'axios'
 
 import navbar from './NavBar.vue'
-import pagenation from './PageNation.vue'
+import indexcontents from './IndexContents.vue'
 
 export default {
 	components: {
 		navbar,
-		pagenation
+		indexcontents
 	}
 }
 </script>
