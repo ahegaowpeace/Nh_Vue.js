@@ -8,7 +8,6 @@
 
 <script>
 import Vue from 'vue'
-import axios from 'axios'
 
 import navbar from './NavBar.vue'
 import indexcontents from './IndexContents.vue'
